@@ -20,7 +20,7 @@ class Dlib:
         left_eyes_y = [landmarks.part(i).y for i in left_eyes]
         width = max(left_eyes_x)-min(left_eyes_x)
         height = max(left_eyes_y)-min(left_eyes_y)
-        print(f"Lefteyes: x = {max(left_eyes_x)} y = { max(left_eyes_y)}, height = {height}, width = {width}")
+        print(f"Lefteye: x = {max(left_eyes_x)} y = { max(left_eyes_y)}, height = {height}, width = {width}")
     
     def righteyes(self):
         face = self.detector(self.imgrgb, 1)
@@ -30,6 +30,6 @@ class Dlib:
         right_eyes_y = [landmarks.part(i).y for i in right_eyes]
         width = max(right_eyes_x)-min(right_eyes_x)
         height = max(right_eyes_y)-min(right_eyes_y)
-        print(f"Righteyes: x = {max(right_eyes_x)} y = { max(right_eyes_y)}, height = {height}, width = {width}")
+        print(f"Righteye: x = {max(right_eyes_x)} y = { max(right_eyes_y)}, height = {height}, width = {width}")
         
         
