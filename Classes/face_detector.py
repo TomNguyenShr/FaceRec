@@ -15,5 +15,3 @@ class Facedetector():
 
         return self.imgrgb
 
-# align_dlib = Facedetector("lfw/Aaron_Eckhart/Aaron_Eckhart_0001.jpg")
-# align_dlib.facial_rec()
